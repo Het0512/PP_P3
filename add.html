@@ -155,8 +155,9 @@
                 return false;
             }
 
-            alert("게시물이 추가됩니다!");
-            window.location.href = '/index.html';
+            if(alert("게시물이 추가됩니다!") == true) {
+                window.location.href = '/index.html';
+            }
         }
         function back() {
             if(confirm("정말 그만두시겠습니까?") == true) {
