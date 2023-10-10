@@ -83,3 +83,89 @@
         height: auto;
     }
 }
+
+.backbutton {
+    background-color: rgb(152, 152, 152);
+    border: none;
+    color: white;
+    border-radius: 5px;
+}
+.backbutton:hover {
+    background-color: gray;
+}
+
+.addbutton {
+    background-color: rgb(0, 190, 0);
+    border: none;
+    color: white;
+    border-radius: 5px;
+}
+.addbutton:hover {
+    background-color: rgb(0, 160, 0);
+}
+
+.deletbutton {
+    background-color: red;
+    border: none;
+    color: white;
+    border-radius: 5px;
+}
+.deletbutton:hover {
+    background-color: rgb(216, 3, 3);
+}
+
+.editbutton {
+    background-color: rgb(0, 190, 0);
+    border: none;
+    color: white;
+    border-radius: 5px;
+}
+.editbutton:hover {
+    background-color: rgb(0, 160, 0);
+}
+
+.menubutton {
+    background: none;
+    border: none;
+    border-radius: 5px;
+}
+.menubutton:hover {
+    background-color: rgb(219, 219, 219);
+}
+
+.searchbutton {
+    background-color: rgb(219, 219, 219);
+    border: none;
+    border-radius: 5px;
+}
+.searchbox {
+    border-radius: 5px;
+}
+
+.name {
+    background: none;
+    border: none;
+    border-radius: 5px;
+}
+.name:hover {
+    background-color: rgb(219, 219, 219);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.jumbotron1 {
+    .container {
+        background-color: rgb(226, 226, 226);
+    }
+}
+
+.tablename {
+    background-color: black;
+    color: white;
+}
+.tablecontent {
+    background-color: white;
+}
