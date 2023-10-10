@@ -13,7 +13,7 @@
     <link href="bootstrap-3.4.1\docs\examples\justified-nav\justified-nav.css" rel="stylesheet">
     <style>
         @media only screen and (max-width: 600px) {
-            .container {
+            .container1 {
                 font-size: 10px;
             }
             .addbutton {
@@ -32,7 +32,7 @@
             }
         }
         @media only screen and (min-width: 601px) {
-            .container {
+            .container1 {
                 font-size: 20px;
             }
             .addbutton {
@@ -72,91 +72,90 @@
 </head>
 <body>
     <div class="masthead">
-        <div class="container">
+        <div class="container container1">
             <div class="navbar-header">
                 <h3 class="text-muted"><img src="bootstrap-3.4.1\docs\female_idol_icon.png" width="35"> PP_P3 22200787 Euntaek Han</h3>
             </div>
         </div>
     </div>
     <br><br>
-    <div class="container">
-        <div class="container">
-            <form name="form1" action="/view.html" onsubmit="return validateForm()">
-                <fieldset>
-                    <legend><h3>Name</h3></legend>
-                    <input type="text" name="name" value="미연"><br><br>
-    
-                    <legend><h3>Gender</h3></legend>
-                    <input type="radio" id="male" name="gender" value="남자">
-                    <label for="male">남자&nbsp;&nbsp;&nbsp;</label>
-                    <input type="radio" id="female" name="gender" value="여자" checked>
-                    <label for="female">여자</label><br><br>
-    
-                    <legend><h3>Age</h3></legend>
-                    <input type="number" name="age" min="1" max="100" step="1" value="26">
-                    <input type="date" name="bday" value="1997-01-31"><br><br>
-    
-                    <legend><h3>Nationality (Choose all)</h3></legend>
-                    <input type="checkbox" id="nationality1" name="nationality1" value="대한민국" checked>
-                    <label for="nationality1"> 대한민국</label><br>
-                    <input type="checkbox" id="nationality2" name="nationality2" value="일본">
-                    <label for="nationality2"> 일본</label><br>
-                    <input type="checkbox" id="nationality3" name="nationality3" value="미국">
-                    <label for="nationality3"> 미국</label><br>
-                    <input type="checkbox" id="nationality4" name="nationality4" value="중국">
-                    <label for="nationality4"> 중국</label><br>
-                    <input type="checkbox" id="nationality5" name="nationality5" value="대만">
-                    <label for="nationality5"> 대만</label><br>
-                    <input type="checkbox" id="nationality6" name="nationality6" value="태국">
-                    <label for="nationality6"> 태국</label><br>
-                    <input type="checkbox" id="nationality7" name="nationality7" value="기타1">
-                    <label for="nationality7"><input type="text" name="nationality7" placeholder="기타1"></label><br>
-                    <input type="checkbox" id="nationality8" name="nationality8" value="기타2">
-                    <label for="nationality8"><input type="text" name="nationality8" placeholder="기타2"></label><br><br>
+    <div class="container container1">
+        <form name="form1" action="/view.html" onsubmit="return validateForm()">
+            <fieldset>
+                <legend><h3>Name</h3></legend>
+                <input type="text" name="name" value="미연"><br><br>
 
-                    <legend><h3>Group Name</h3></legend>
-                    <input type="text" name="groupname" value="(G)I-DLE"><br><br>
+                <legend><h3>Gender</h3></legend>
+                <input type="radio" id="male" name="gender" value="남자">
+                <label for="male">남자&nbsp;&nbsp;&nbsp;</label>
+                <input type="radio" id="female" name="gender" value="여자" checked>
+                <label for="female">여자</label><br><br>
 
-                    <legend><h3>Agency</h3></legend>
-                    <input type="text" name="agency" value="큐브엔터테인먼트"><br><br>
+                <legend><h3>Age</h3></legend>
+                <input type="number" name="age" min="1" max="100" step="1" value="26">
+                <input type="date" name="bday" value="1997-01-31"><br><br>
 
-                    <legend><h3>Debut date</h3></legend>
-                    <input type="date" name="ddate" value="2018-05-02"><br><br>
-    
-                    <legend><h3>MBTI</h3></legend>
-                    <select id="mbti" name="mbti">
-                        <option value="---- ">---- </option>
-                        <option value="ENFP " selected>ENFP </option>
-                        <option value="ENFJ ">ENFJ </option>
-                        <option value="ENTP ">ENTP </option>
-                        <option value="ENTJ ">ENTJ </option>
-                        <option value="ESFP ">ESFP </option>
-                        <option value="ESFJ ">ESFJ </option>
-                        <option value="ESTP ">ESTP </option>
-                        <option value="ESTJ ">ESTJ </option>
-                        <option value="INFP ">INFP </option>
-                        <option value="INFJ ">INFJ </option>
-                        <option value="INTP ">INTP </option>
-                        <option value="INTJ ">INTJ </option>
-                        <option value="ISFP ">ISFP </option>
-                        <option value="ISFJ ">ISFJ </option>
-                        <option value="ISTP ">ISTP </option>
-                        <option value="ISTJ ">ISTJ </option>
-                    </select><br><br>
-    
-                    <legend><h3>Write the nickname of the person</h3></legend>
-                    <textarea class="message" name="message" rows="10" cols="100">면, 미하, 누들이, 조버럭, 조쿼카, 면프로디테, 면공주 등</textarea>
-                </fieldset>
-                <br>
-                <input type="submit" class="addbutton" value="Edit">
-                <button onclick="back()" class="backbutton" type="button">Back</button>
-            </form>
-        </div>
+                <legend><h3>Nationality (Choose all)</h3></legend>
+                <input type="checkbox" id="nationality1" name="nationality1" value="대한민국" checked>
+                <label for="nationality1"> 대한민국</label><br>
+                <input type="checkbox" id="nationality2" name="nationality2" value="일본">
+                <label for="nationality2"> 일본</label><br>
+                <input type="checkbox" id="nationality3" name="nationality3" value="미국">
+                <label for="nationality3"> 미국</label><br>
+                <input type="checkbox" id="nationality4" name="nationality4" value="중국">
+                <label for="nationality4"> 중국</label><br>
+                <input type="checkbox" id="nationality5" name="nationality5" value="대만">
+                <label for="nationality5"> 대만</label><br>
+                <input type="checkbox" id="nationality6" name="nationality6" value="태국">
+                <label for="nationality6"> 태국</label><br>
+                <input type="checkbox" id="nationality7" name="nationality7" value="기타1">
+                <label for="nationality7"><input type="text" name="nationality7" placeholder="기타1"></label><br>
+                <input type="checkbox" id="nationality8" name="nationality8" value="기타2">
+                <label for="nationality8"><input type="text" name="nationality8" placeholder="기타2"></label><br><br>
+
+                <legend><h3>Group Name</h3></legend>
+                <input type="text" name="groupname" value="(G)I-DLE"><br><br>
+
+                <legend><h3>Agency</h3></legend>
+                <input type="text" name="agency" value="큐브엔터테인먼트"><br><br>
+
+                <legend><h3>Debut date</h3></legend>
+                <input type="date" name="ddate" value="2018-05-02"><br><br>
+
+                <legend><h3>MBTI</h3></legend>
+                <select id="mbti" name="mbti">
+                    <option value="---- ">---- </option>
+                    <option value="ENFP " selected>ENFP </option>
+                    <option value="ENFJ ">ENFJ </option>
+                    <option value="ENTP ">ENTP </option>
+                    <option value="ENTJ ">ENTJ </option>
+                    <option value="ESFP ">ESFP </option>
+                    <option value="ESFJ ">ESFJ </option>
+                    <option value="ESTP ">ESTP </option>
+                    <option value="ESTJ ">ESTJ </option>
+                    <option value="INFP ">INFP </option>
+                    <option value="INFJ ">INFJ </option>
+                    <option value="INTP ">INTP </option>
+                    <option value="INTJ ">INTJ </option>
+                    <option value="ISFP ">ISFP </option>
+                    <option value="ISFJ ">ISFJ </option>
+                    <option value="ISTP ">ISTP </option>
+                    <option value="ISTJ ">ISTJ </option>
+                </select><br><br>
+
+                <legend><h3>Write the nickname of the person</h3></legend>
+                <textarea class="message" name="message" rows="10" cols="100">면, 미하, 누들이, 조버럭, 조쿼카, 면프로디테, 면공주 등</textarea>
+            </fieldset>
+            <br>
+            <input type="submit" class="addbutton" value="Edit">
+            <button onclick="back()" class="backbutton" type="button">Back</button>
+        </form>
         <hr>
         <footer>
             <p>© 2023 Eun-taek, Han.</p>
         </footer>
     </div>
+    
     <script>
         function validateForm() {
             var name = document.form1.name;
