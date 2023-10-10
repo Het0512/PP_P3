@@ -300,6 +300,20 @@
         function add() {
             window.location.href = '/add.html';
         }
+        function open() {
+            window.location.href = '/view.html';
+        }
+        function edit() {
+            window.location.href = '/edit.html';
+        }
+        function del() {
+            if(confirm("게시물을 삭제할까요?") == true) {
+                return false;
+            }
+            else {
+                return false;
+            }
+        }
     </script>
 </body>
 </html>
