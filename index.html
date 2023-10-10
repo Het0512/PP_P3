@@ -307,10 +307,7 @@
             window.location.href = '/edit.html';
         }
         function del() {
-            if(confirm("게시물을 삭제할까요?") == true) {
-                window.location.href = '/index.html';
-            }
-            else {
+            if(confirm("게시물을 삭제할까요?") == false) {
                 return false;
             }
         }
