@@ -12,8 +12,45 @@
     <link href="bootstrap-3.4.1\docs\assets\css\ie10-viewport-bug-workaround.css" rel="stylesheet">
     <link href="bootstrap-3.4.1\docs\examples\justified-nav\justified-nav.css" rel="stylesheet">
     <style>
-        div {
-            box-sizing: border-box;
+        @media only screen and (max-width: 600px) {
+            table.table {
+                font-size: 10px;
+            }
+            .deletbutton {
+                width: 40px;
+                height: 20px;
+                font-size: 10px;
+            }
+            .editbutton {
+                width: 30px;
+                height: 20px;
+                font-size: 10px;
+            }
+            .backbutton {
+                width: 30px;
+                height: 20px;
+                font-size: 10px;
+            }
+        }
+        @media only screen and (min-width: 601px) {
+            table.table {
+                font-size: 15px;
+            }
+            .deletbutton {
+                width: 100px;
+                height: 40px;
+                font-size: 20px;
+            }
+            .editbutton {
+                width: 100px;
+                height: 40px;
+                font-size: 20px;
+            }
+            .backbutton {
+                width: 100px;
+                height: 40px;
+                font-size: 20px;
+            }
         }
         img {
             max-width: 100%;
@@ -23,18 +60,12 @@
             background: none;
             border-width: 1px;
             border-radius: 5px;
-            width: 100px;
-            height: 40px;
-            font-size: 20px;
         }
         .editbutton {
             background-color: rgb(0, 190, 0);
             border: none;
             color: white;
             border-radius: 5px;
-            width: 100px;
-            height: 40px;
-            font-size: 20px;
         }
         .editbutton:hover {
             background-color: rgb(0, 160, 0);
@@ -44,25 +75,14 @@
             border: none;
             color: white;
             border-radius: 5px;
-            width: 100px;
-            height: 40px;
-            font-size: 20px;
         }
         .backbutton:hover {
             background-color: gray;
-        }
-        .deletbutton {
-            background: none;
-            border-radius: 5px;
-            width: 100px;
-            height: 40px;
-            font-size: 20px;
         }
         .deletbutton:hover {
             background-color: rgb(219, 219, 219);
         }
         .jumbotron {
-            font-size: 18px;
             .container {
                 background-color: rgb(226, 226, 226);
             }
@@ -79,14 +99,7 @@
 <body>
     <div class="masthead">
         <div class="container">
-            <div class="navbar-header">
                 <h3 class="text-muted"><img src="bootstrap-3.4.1\docs\female_idol_icon.png" width="35"> PP_P3 22200787 Euntaek Han</h3>
-            </div>
-            <div id="navbar" class="navbar-collapse collapse">
-                <div class="navbar-form navbar-right">
-                    <button onclick="back()" class="backbutton" type="button">Back</button>
-                </div>
-            </div>
         </div>
     </div>
     <div class="jumbotron">
@@ -140,6 +153,7 @@
         <br><br>
         <button onclick="edit()" class="editbutton" type="button">Edit</button>
         <button onclick="del()" class="deletbutton" type="button">Delet</button>
+        <button onclick="back()" class="backbutton" type="button">Back</button>
     </div>
     <div class="container">
         <hr>

@@ -12,6 +12,51 @@
     <link href="bootstrap-3.4.1\docs\assets\css\ie10-viewport-bug-workaround.css" rel="stylesheet">
     <link href="bootstrap-3.4.1\docs\examples\justified-nav\justified-nav.css" rel="stylesheet">
     <style>
+        @media only screen and (max-width: 600px) {
+            table.table {
+                font-size: 10px;
+            }
+            .addbutton {
+                width: 30px;
+                height: 20px;
+                font-size: 10px;
+            }
+            .searchbutton {
+                width: 50px;
+                height: 20px;
+                font-size: 10px;
+            }
+            .searchbox {
+                width: 100px;
+                height: 20px;
+                font-size: 10px;
+            }
+            ul.nav {
+                width: 100%;
+                height: 10%;
+                font-size: 10px;
+            }
+        }
+        @media only screen and (min-width: 601px) {
+            table.table {
+                font-size: 20px;
+            }
+            .addbutton {
+                width: 100px;
+                height: 40px;
+                font-size: 20px;
+            }
+            .searchbutton {
+                width: 100px;
+                height: 40px;
+                font-size: 20px;
+            }
+            .searchbox {
+                width: 200px;
+                height: 40px;
+                font-size: 20px;
+            }
+        }
         .name {
             background: none;
             border: none;
@@ -19,9 +64,6 @@
         }
         .name:hover {
             background-color: rgb(219, 219, 219);
-        }
-        .table {
-            font-size: 20px;
         }
         .menubutton {
             background: none;
@@ -33,70 +75,29 @@
         }
         .searchbutton {
             background: none;
-            border-width: 1px;
+            border-width: 2px;
             border-radius: 5px;
-            width: 100px;
-            height: 40px;
-            font-size: 20px;
         }
         .addbutton {
             background-color: rgb(0, 190, 0);
             border: none;
             color: white;
             border-radius: 5px;
-            width: 100px;
-            height: 40px;
-            font-size: 20px;
         }
         .addbutton:hover {
             background-color: rgb(0, 160, 0);
-        }
-        .searchbox {
-            width: 200px;
-            height: 40px;
-            font-size: 20px;
         }
     </style>
 </head>
 <body>
     <div class="masthead">
         <div class="container">
-            <div class="navbar-header">
-                <h3 class="text-muted"><img src="bootstrap-3.4.1\docs\female_idol_icon.png" width="35"> PP_P3 22200787 Euntaek Han</h3>
-            </div>
+            <h3 class="text-muted"><img src="bootstrap-3.4.1\docs\female_idol_icon.png" width="35"> PP_P3 22200787 Euntaek Han</h3>
         </div>
     </div>
     <div class="jumbotron">
-        <div class="container">
-            <h1>Idol list</h1>
-            <p class="lead">For more information, <span style="color: red;">press the name</span> of the person you want to see.</p>
-            <br><br><br>
-            <nav>
-                <ul class="nav nav-justified">
-                    <li>
-                        <a href="#">&lt;&lt;</a>
-                    </li>
-                    <li class="active">
-                        <a href="#">1</a>
-                    </li>
-                    <li>
-                        <a href="#">2</a>
-                    </li>
-                    <li>
-                        <a href="#">3</a>
-                    </li>
-                    <li>
-                        <a href="#">4</a>
-                    </li>
-                    <li>
-                        <a href="#">5</a>
-                    </li>
-                    <li>
-                        <a href="#">&gt;&gt;</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
+        <h1>Idol list</h1>
+        <p class="lead">For more information, <span style="color: red;">press the name</span> of the person you want to see.</p>
     </div>
     <div class="container">
         <div class="table-responsive">

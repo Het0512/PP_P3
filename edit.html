@@ -12,17 +12,49 @@
     <link href="bootstrap-3.4.1\docs\assets\css\ie10-viewport-bug-workaround.css" rel="stylesheet">
     <link href="bootstrap-3.4.1\docs\examples\justified-nav\justified-nav.css" rel="stylesheet">
     <style>
-        .container {
-            font-size: 20px;
+        @media only screen and (max-width: 600px) {
+            .container {
+                font-size: 10px;
+            }
+            .addbutton {
+                width: 30px;
+                height: 20px;
+                font-size: 10px;
+            }
+            .backbutton {
+                width: 50px;
+                height: 20px;
+                font-size: 10px;
+            }
+            textarea.message {
+                max-width: 100%;
+                height: auto;
+            }
+        }
+        @media only screen and (min-width: 601px) {
+            .container {
+                font-size: 20px;
+            }
+            .addbutton {
+                width: 100px;
+                height: 40px;
+                font-size: 20px;
+            }
+            .backbutton {
+                width: 100px;
+                height: 40px;
+                font-size: 20px;
+            }
+            textarea.message {
+                max-width: 100%;
+                height: auto;
+            }
         }
         .backbutton {
             background-color: rgb(152, 152, 152);
             border: none;
             color: white;
             border-radius: 5px;
-            width: 100px;
-            height: 40px;
-            font-size: 20px;
         }
         .backbutton:hover {
             background-color: gray;
@@ -32,9 +64,6 @@
             border: none;
             color: white;
             border-radius: 5px;
-            width: 100px;
-            height: 40px;
-            font-size: 20px;
         }
         .addbutton:hover {
             background-color: rgb(0, 160, 0);
@@ -116,7 +145,7 @@
                     </select><br><br>
     
                     <legend><h3>Write the nickname of the person</h3></legend>
-                    <textarea name="message" rows="10" cols="100">면, 미하, 누들이, 조버럭, 조쿼카, 면프로디테, 면공주 등</textarea>
+                    <textarea class="message" name="message" rows="10" cols="100">면, 미하, 누들이, 조버럭, 조쿼카, 면프로디테, 면공주 등</textarea>
                 </fieldset>
                 <br>
                 <input type="submit" class="addbutton" value="Edit">
@@ -125,7 +154,7 @@
         </div>
         <hr>
         <footer>
-            <p style="font-size: 15px;">© 2023 Eun-taek, Han.</p>
+            <p>© 2023 Eun-taek, Han.</p>
         </footer>
     </div>
     <script>
