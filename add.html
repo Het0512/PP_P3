@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content>
+    <meta name="author" content>
+    <link rel="icon" href="bootstrap-3.4.1\docs\female_idol_icon.png">
+    <link rel="canonical" href="bootstrap-3.4.1\docs\examples\justified-nav\">
+    <title>Idol List</title>
+    <link href="bootstrap-3.4.1\docs\dist\css\bootstrap.min.css" rel="stylesheet">
+    <link href="bootstrap-3.4.1\docs\assets\css\ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <link href="bootstrap-3.4.1\docs\examples\justified-nav\justified-nav.css" rel="stylesheet">
+    <style>
+        .container {
+            font-size: 20px;
+        }
+        .backbutton {
+            background-color: rgb(152, 152, 152);
+            border: none;
+            color: white;
+            border-radius: 5px;
+            width: 100px;
+            height: 40px;
+            font-size: 20px;
+        }
+        .backbutton:hover {
+            background-color: gray;
+        }
+        .addbutton {
+            background-color: rgb(0, 190, 0);
+            border: none;
+            color: white;
+            border-radius: 5px;
+            width: 100px;
+            height: 40px;
+            font-size: 20px;
+        }
+        .addbutton:hover {
+            background-color: rgb(0, 160, 0);
+        }
+    </style>
+</head>
+<body>
+    <div class="masthead">
+        <div class="container">
+            <div class="navbar-header">
+                <h3 class="text-muted"><img src="bootstrap-3.4.1\docs\female_idol_icon.png" width="35"> PP_P3 22200787 Euntaek Han</h3>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <div class="navbar-form navbar-right">
+                    <button onclick="back()" class="backbutton" type="button">Back</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br>
+    <div class="container">
+        <div class="container">
+            <form name="form1" onsubmit="return validateForm()">
+                <fieldset>
+                    <legend><h3>Name</h3></legend>
+                    <input type="text" name="name"><br><br>
+    
+                    <legend><h3>Gender</h3></legend>
+                    <input type="radio" id="male" name="gender" value="남자">
+                    <label for="male">남자&nbsp;&nbsp;&nbsp;</label>
+                    <input type="radio" id="female" name="gender" value="여자">
+                    <label for="female">여자</label><br><br>
+    
+                    <legend><h3>Age</h3></legend>
+                    <input type="number" name="age" min="1" max="100" step="1" value="20">
+                    <input type="date" name="bday"><br><br>
+    
+                    <legend><h3>Nationality (Choose all)</h3></legend>
+                    <input type="checkbox" id="nationality1" name="nationality1" value="대한민국">
+                    <label for="nationality1"> 대한민국</label><br>
+                    <input type="checkbox" id="nationality2" name="nationality2" value="일본">
+                    <label for="nationality2"> 일본</label><br>
+                    <input type="checkbox" id="nationality3" name="nationality3" value="미국">
+                    <label for="nationality3"> 미국</label><br>
+                    <input type="checkbox" id="nationality4" name="nationality4" value="중국">
+                    <label for="nationality4"> 중국</label><br>
+                    <input type="checkbox" id="nationality5" name="nationality5" value="대만">
+                    <label for="nationality5"> 대만</label><br>
+                    <input type="checkbox" id="nationality6" name="nationality6" value="태국">
+                    <label for="nationality6"> 태국</label><br>
+                    <input type="checkbox" id="nationality7" name="nationality7" value="기타1">
+                    <label for="nationality7"><input type="text" name="nationality7" placeholder="기타1"></label><br>
+                    <input type="checkbox" id="nationality8" name="nationality8" value="기타2">
+                    <label for="nationality8"><input type="text" name="nationality8" placeholder="기타2"></label><br><br>
+
+                    <legend><h3>Group Name</h3></legend>
+                    <input type="text" name="groupname"><br><br>
+
+                    <legend><h3>Agency</h3></legend>
+                    <input type="text" name="agency"><br><br>
+
+                    <legend><h3>Debut date</h3></legend>
+                    <input type="date" name="ddate"><br><br>
+    
+                    <legend><h3>MBTI</h3></legend>
+                    <select id="mbti" name="mbti">
+                        <option value="---- ">---- </option>
+                        <option value="ENFP ">ENFP </option>
+                        <option value="ENFJ ">ENFJ </option>
+                        <option value="ENTP ">ENTP </option>
+                        <option value="ENTJ ">ENTJ </option>
+                        <option value="ESFP ">ESFP </option>
+                        <option value="ESFJ ">ESFJ </option>
+                        <option value="ESTP ">ESTP </option>
+                        <option value="ESTJ ">ESTJ </option>
+                        <option value="INFP ">INFP </option>
+                        <option value="INFJ ">INFJ </option>
+                        <option value="INTP ">INTP </option>
+                        <option value="INTJ ">INTJ </option>
+                        <option value="ISFP ">ISFP </option>
+                        <option value="ISFJ ">ISFJ </option>
+                        <option value="ISTP ">ISTP </option>
+                        <option value="ISTJ ">ISTJ </option>
+                    </select><br><br>
+    
+                    <legend><h3>Write the nickname of the person</h3></legend>
+                    <textarea name="message" rows="10" cols="100">ex) 쿼카, 다람쥐, 누들이 등</textarea>
+                </fieldset>
+                <br>
+                <input type="submit" class="addbutton" value="Add">
+            </form>
+        </div>
+        <hr>
+        <footer>
+            <p style="font-size: 15px;">© 2023 Eun-taek, Han.</p>
+        </footer>
+    </div>
+    <script>
+        function validateForm() {
+            var name = document.form1.name;
+            if(name.value == "") {
+                alert("이름을 입력해주세요!");
+                name.focus();
+                return false;
+            }
+
+            var gender = document.form1.gender;
+            if(gender.value == "") {
+                alert("성별을 입력해주세요!");
+                gender.focus();
+                return false;
+            }
+
+            var groupname = document.form1.groupname;
+            if(groupname.value == "") {
+                alert("그룹 이름을 입력해주세요!");
+                groupname.focus();
+                return false;
+            }
+
+            alert("게시물이 추가됩니다!");
+            window.location.href = '/index.html';
+        }
+        function back() {
+            if(confirm("정말 그만두시겠습니까?") == true) {
+                window.location.href = '/index.html';
+            }
+            else {
+                return false;
+            }
+        }
+    </script>
+</body>
+</html>
