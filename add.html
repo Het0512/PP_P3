@@ -57,7 +57,7 @@
     <br><br>
     <div class="container">
         <div class="container">
-            <form name="form1" onsubmit="return validateForm()">
+            <form name="form1" action="index.html" method="post" onsubmit="return validateForm()">
                 <fieldset>
                     <legend><h3>Name</h3></legend>
                     <input type="text" name="name"><br><br>
@@ -155,9 +155,7 @@
                 return false;
             }
 
-            if(alert("게시물이 추가됩니다!") == true) {
-                window.location.href = 'index.html';
-            }
+            alert("게시물이 추가됩니다!");
         }
         function back() {
             if(confirm("정말 그만두시겠습니까?") == true) {
